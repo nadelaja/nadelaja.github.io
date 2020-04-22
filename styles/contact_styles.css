@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*Nav Bar!*/
+ul {
+  /*fixes the nav bar in place with photo above*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: #8D6163;
+  border-bottom: solid;
+  height: 4em;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  float: right;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.25em;
+}
+
+/* Change link color on hover */
+.nav li a:hover {
+  background-color: #E2B4BD;
+}
+
+
+.logo li a:hover {
+  background-color: #8D6163;
+}
+
+.logo li a{ 
+  float: left;
+  display: inline-block;
+  border: none;
+  padding: 0.75em 1em;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.50em;
+ }
+
+.and {
+  color:#E2B4BD;
+}
+
+body{
+  background-image: url("../images/bread_bg.png");
+  background-repeat: repeat;
+  background-position: center center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.page_name {
+  font-size: 2.5em;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+  text-align: center;
+  padding: 0;
+  margin-top: 1.25em;
+  margin-bottom: .25em;
+  color: #8D6163;
+}
+
+#roller_image img{
+  width: 8%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*TEXT ENTRY BOXES*/
+input[type=text], select, textarea {
+  width: 100%;
+  margin-bottom: 16px; /* Bottom margin */
+  padding: 12px;
+  border: 1px solid #ccc; /*border*/
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box; 
+  font-family: 'Comfortaa', cursive;
+}
+
+label {
+  padding: 1.25em .75em .50em 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  color: white;
+  cursor: pointer;
+  background-color: #8D6163;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 1.5em;
+  float: right;
+  padding: 16px 20px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #D38998;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em; 
+  width: 50%;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 6em;
+  padding-top: 2em
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+#footer {
+  color: #fff;
+  background: #8D6163;
+  font-size: 1rem;  /* consider using rem rather than em for responzive pages*/
+  font-family: 'Comfortaa', cursive;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 0em;
+  position: static;
+  display: inline-block;
+  text-align: center;
+}
+
+#copy {
+  font-size: .80em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
