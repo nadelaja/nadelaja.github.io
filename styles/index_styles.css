@@ -38,7 +38,7 @@ ul {
   background-color: #E2B4BD;
 }
 
-.nav li a:active {
+.nav li a:current {
   background-color: #E2B4BD;
 }
 
