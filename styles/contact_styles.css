@@ -39,7 +39,7 @@ ul {
   background-color: #E2B4BD;
 }
 
-.now {
+.nav li a:focus {
   background-color: #E2B4BD;
 }
 
